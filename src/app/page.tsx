@@ -42,24 +42,27 @@ export default function PortfolioHome() {
           EXPIERENCE.map((item, idx) => (
             <div
               key={idx}
-              className="experience-item"
+              className="experience-area"
             >
-              <div className="experience-info">
+              <div className="experience-item">
                 <figure>
                   <img
                     src={`/images/logo/${item.thumbnail}`}
                     alt={item.company_name}
                   />
                 </figure>
-                <h4>
-                  {item.company_name}
-                </h4>
-                <p className="color-lowlight">
-                  {item.job}
-                </p>
-                <p className="color-lowlight small">
-                  {item.start_date} ~ {item.end_date}
-                </p>
+                <div className="experience-info">
+                  <h4>
+                    {item.company_name}
+                  </h4>
+                  <p className="color-lowlight">
+                    {item.job}
+                  </p>
+                  <p className="color-lowlight small">
+                    {item.start_date} ~ {item.end_date}
+                  </p>
+                </div>
+
               </div>
 
               <ul className="experience-list">
