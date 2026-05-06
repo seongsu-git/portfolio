@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "최성수 | 프론트엔드 개발자 포트폴리오",
+    title: "최성수 | 포트폴리오",
     description: "협업과 표준화를 중요하게 생각하는 프론트엔드 개발자 최성수입니다.",
     images: ["https://seongsu.dev/images/meta-image.png"],
   },
