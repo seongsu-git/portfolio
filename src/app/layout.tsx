@@ -4,6 +4,7 @@ import "./css/fonts.css";
 import "./css/globals.css";
 import "./css/style.css";
 import { CopyButton } from "./component/client/Button";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "최성수 | 포트폴리오",
@@ -49,12 +50,23 @@ export default function RootLayout({
         {children}
 
         <footer className="footer-area small color-lowlight">
-          <p className="footer-mail">
-            <CopyButton
-              email="sungsu0221@naver.com"
-            />
+          <div className="footer-link">
+            <p className="">
+              <Link
+                href={"https://github.com/seongsu-git/portfolio"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </Link>
+            </p>
+            <p className="">
+              <CopyButton
+                text="sungsu0221@naver.com"
+              />
+            </p>
+          </div>
 
-          </p>
           <p className="copyright">
             © 2026. <span className="font-bold">Choi Seong-su</span>. All rights reserved.
           </p>
