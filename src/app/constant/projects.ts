@@ -48,12 +48,12 @@ const PROJECTS: Project[] = [
         thumbnail: "ticketbay.png",
         description: "국내 최대 티켓중개거래 플랫폼",
     },
-    {
-        href: "https://www.webtoonguide.com",
-        label: "웹툰가이드",
-        thumbnail: "",
-        description: "월평균 150만 명 유입, 전체 가입 회원 수 10만 명의 웹툰 전문 웹진",
-    },
+    // {
+    //     href: "https://www.webtoonguide.com",
+    //     label: "웹툰가이드",
+    //     thumbnail: "",
+    //     description: "월평균 150만 명 유입, 전체 가입 회원 수 10만 명의 웹툰 전문 웹진",
+    // },
 ];
 
 
