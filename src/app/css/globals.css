@@ -42,6 +42,10 @@ h5 {
   margin: 0;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 b {
   font-weight: 600;
 }
@@ -261,7 +265,7 @@ ul ul {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  border-radius: 24px;
   overflow: hidden;
   background-color: var(--bg-card);
   border: 1px solid var(--border);
@@ -355,6 +359,23 @@ footer {
   color: var(--muted);
 }
 
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foreground);
+}
+
+.footer-link p:not(:first-child)::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 0.6rem;
+  background-color: var(--muted);
+  margin: 0 4px;
+  opacity: 0.6;
+}
+
 button {
   all: unset;
   font-family: inherit;
@@ -365,6 +386,16 @@ button {
 
 .button-copy:hover {
   text-decoration: underline;
+}
+
+.section-projects h2::after {
+  content: '※클릭 시 해당 프로젝트로 이동합니다.';
+  display: block;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--muted);
+  opacity: 0.8;
 }
 
 /* Responsive */
