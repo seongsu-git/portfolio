@@ -18,23 +18,30 @@ export const metadata: Metadata = {
     siteName: "Seongsu Dev",
     locale: "ko_KR",
     type: "website",
-    images: [{ url: "https://seongsu.dev/images/meta-image.png", width: 1200, height: 630 }], // 공유 시 보여줄 이미지 경로
+    images: [{ url: "https://seongsu.dev/images/meta-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "최성수 | 포트폴리오",
-    description: "협업과 표준화를 중요하게 생각하는 프론트엔드 개발자 최성수입니다.",
+    description: "프론트엔드 개발자 최성수의 포트폴리오 입니다.",
     images: ["https://seongsu.dev/images/meta-image.png"],
   },
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230F172A'/><path d='M30 35 L45 50 L30 65 M55 35 L70 50 L55 65' stroke='%2338BDF8' stroke-width='12' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
+  manifest: "/site.webmanifest",
   robots: {
     index: true,
     follow: true,
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
