@@ -26,16 +26,6 @@ export const metadata: Metadata = {
     description: "프론트엔드 개발자 최성수의 포트폴리오 입니다.",
     images: ["https://seongsu.dev/images/meta-image.png"],
   },
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-  },
   manifest: "/site.webmanifest",
   robots: {
     index: true,
